@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/820a25f821.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          
+          <h1>Hi, I'm <span>Radhika</span> </h1>
+          <p>Student From R.M.K Engineering College</p>
+          
+
+        
+      </div>
+    </div>
+</div>
+<!--- ------about-->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="student.png" alt="logo">
+           </div>
+      <div class="about-col-2">
+        <h1 class="subtitle">About Me</h1>
+        <p> 
+            Highly motivated and eager-to
+            learn computer science student 
+            seeking internship to leverage 
+            my burgeoning web 
+            development skills and 
+            contribute to real-world projects 
+            alongside innovative minds. 
+            Passion for building user
+            friendly, interactive web 
+            experiences, I'm eager to gain 
+            practical experience, learn from 
+            industry experts, and contribute 
+            to cutting-edge technology.
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li><span>Java</span></li>
+          <li><span>SQL</span></li>
+          <li><span>Web/App development</span></li>
+          <li><span>GIT</span></li>
+          <li><span>Agile methodology</span></li>
+          
+        </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2021</span><br>The Velamaal International School</li>
+            <li><span>2026</span><br>BE-R.M.K Engineering College</li>
+          </ul>
+      </div>
+      
+      </div>
+    </div>
+</div>
+<!--------portfolio-->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="blood.png" alt="E-blood bank">
+        <div class="layer">
+          <h3>E-Blood Bank(Red help)</h3>
+          <p>
+            E blood bank, a revolutionary concept, has revolutionized blood transfusions by leveraging advanced technology to streamline the entire process. 
+            This digitized system, from donor registration to blood storage, ensures real-time tracking of inventory, guaranteeing hospitals a constant and adequate blood supply. 
+            The innovation enhances efficiency, enabling patients to receive the correct blood type promptly.
+
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="cancer.png" alt="cancer">
+        <div class="layer">
+        <h3>Breast Cancer Prediction Software</h3>
+          <p>Utilizing machine learning, this method involves collecting past Breast Cancer data, employing data mining for efficient processing, 
+            and applying advanced algorithms to predict outcomes, aiming to identify the disease early for improved healthcare outcomes and reduced manual effort.
+          </p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        </div>
+      
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+<!--------contact-->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+    <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fa-solid fa-paper-plane"></i>
+        radh22120.cs@rmkec.ac.in</p>
+      <p><i class="fa-solid fa-phone"></i> 987654321</p>
+      <div class="social-icons">
+        <a href="https://github.com/nisharadhika "><i class="fa-brands fa-github"></i></a>
+        <a href="www.linkedin.com/in/radhika-madhiyazhagan-907939257"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="www.twitter.com">
+          <i class="fa-brands fa-x-twitter"></i>
+          </a>
+      </div>
+      <a href="Resume (2).pdf" download class="btn btn2">Resume</a>
+    </div>
+
+    <div class="contact-right">
+      <form>
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+      </form>
+    </div>
+  </div>
+ </div>
+ <div class="copyright">
+    <p>Unleashing creativity @Radhika</p>
+ </div>
+</div>
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+
+  </body>
+</html>
